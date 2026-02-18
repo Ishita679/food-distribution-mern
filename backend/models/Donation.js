@@ -55,5 +55,4 @@ const DonationSchema = new mongoose.Schema({
 
 // Index for geospatial queries
 DonationSchema.index({ location: '2dsphere' });
-
 module.exports = mongoose.model('Donation', DonationSchema);
