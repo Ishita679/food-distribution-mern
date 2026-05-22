@@ -52,7 +52,6 @@ const DonationSchema = new mongoose.Schema({
     pickedUpAt: Date,
     deliveredAt: Date,
 }, { timestamps: true });
-
 // Index for geospatial queries
 DonationSchema.index({ location: '2dsphere' });
 module.exports = mongoose.model('Donation', DonationSchema);
